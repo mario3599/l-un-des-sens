@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f2e9">
+    <meta name="description" content="L'Un des Sens, restaurant de saison et bar à vins. Une cuisine généreuse, locale et pleine de surprises.">
+    <title>L'Un des Sens — Restaurant & bar à vins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="L'Un des Sens, accueil">
+        <span class="brand-mark" aria-hidden="true">U<span>.</span></span>
+        <span class="brand-name">L'Un des Sens<small>RESTAURANT · BAR À VINS</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="#carte">La carte</a>
+        <a href="#esprit">Notre esprit</a>
+        <a href="#visite">Nous trouver</a>
+        <a class="nav-reserve" href="#reservation">Réserver une table <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> BON, VIVANT & DE SAISON</p>
+          <h1>La vie a<br>meilleur <em>goût</em><br>autour d'une table.</h1>
+          <p class="hero-description">Une cuisine sincère, des produits bien choisis et de bons verres à partager. Bienvenue chez vous.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#carte">Découvrir la carte <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#esprit">Notre histoire <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span> CUISINE DE SAISON <span class="note-divider">·</span> FAIT MAISON</div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustration colorée d'un plat de saison">
+          <div class="art-sun"></div>
+          <div class="art-caption"><span>LE GOÛT DES BONNES CHOSES</span><span>DEPUIS TOUJOURS, POUR DEMAIN</span></div>
+          <svg class="plate-art" viewBox="0 0 500 500" aria-hidden="true">
+            <circle cx="250" cy="250" r="211" fill="#f5e9d1"/>
+            <circle cx="250" cy="250" r="183" fill="#fffaf0"/>
+            <circle cx="250" cy="250" r="151" fill="#e9d5b5"/>
+            <path d="M157 270c23-48 70-72 126-65 42 5 68 32 69 71-31 40-75 64-128 50-32-9-55-27-67-56Z" fill="#698452"/>
+            <path d="M178 254c34-34 77-39 119-23-13 22-36 41-68 48-21 5-38-4-51-25Z" fill="#a6ad65"/>
+            <path d="M209 310c17-30 43-43 73-38-5 30-25 51-56 56-12-2-18-8-17-18Z" fill="#dd8056"/>
+            <circle cx="224" cy="221" r="18" fill="#d76d49"/>
+            <circle cx="276" cy="204" r="15" fill="#d76d49"/>
+            <circle cx="318" cy="252" r="17" fill="#d76d49"/>
+            <circle cx="202" cy="286" r="13" fill="#f0bd68"/>
+            <path d="M205 190c-4-27 7-48 34-61-1 26-11 45-34 61Zm39 2c10-25 29-37 58-35-13 23-32 35-58 35Zm53 37c21-16 44-16 67 0-23 12-45 12-67 0Z" fill="#698452"/>
+            <path d="M183 326c40 19 91 24 143 4" fill="none" stroke="#b87945" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="165" cy="235" r="5" fill="#f8f0df"/>
+            <circle cx="333" cy="296" r="5" fill="#f8f0df"/>
+          </svg>
+          <span class="art-sticker">À TABLE !</span>
+        </div>
+        <a class="scroll-cue" href="#carte" aria-label="Faire défiler vers la carte">↓</a>
+      </section>
+
+      <section class="menu-section section-wrap" id="carte">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> DE BONS PRODUITS, TOUT SIMPLEMENT</p>
+            <h2>À la carte <em>en ce moment</em></h2>
+          </div>
+          <p class="section-intro">La saison donne le ton, nos producteurs les meilleurs ingrédients. Voici quelques assiettes qui nous ressemblent.</p>
+        </div>
+        <div class="menu-tabs" role="group" aria-label="Filtrer la carte">
+          <button class="menu-tab is-active" type="button" aria-pressed="true" data-category="tous">Tout voir</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="assiettes">Les assiettes</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="douceurs">Les douceurs</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="verres">À boire</button>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="assiettes">
+            <div class="dish-visual dish-tomato"><span aria-hidden="true">🎃</span><i>01</i></div>
+            <div class="dish-heading"><h3>Courge rôtie & chèvre frais</h3><span>15</span></div>
+            <p>Noisettes torréfiées, herbes fraîches, huile d'olive</p>
+          </article>
+          <article class="menu-card" data-category="assiettes">
+            <div class="dish-visual dish-pasta"><span aria-hidden="true">🍝</span><i>02</i></div>
+            <div class="dish-heading"><h3>Ravioles du marché</h3><span>19</span></div>
+            <p>Farce du jour, beurre noisette & sauge du jardin</p>
+          </article>
+          <article class="menu-card" data-category="douceurs">
+            <div class="dish-visual dish-dessert"><span aria-hidden="true">🍐</span><i>03</i></div>
+            <div class="dish-heading"><h3>Poire pochée à la verveine</h3><span>9</span></div>
+            <p>Crème légère, sablé croustillant, saison oblige</p>
+          </article>
+          <article class="menu-card" data-category="verres">
+            <div class="dish-visual dish-wine"><span aria-hidden="true">🍷</span><i>04</i></div>
+            <div class="dish-heading"><h3>Le verre du moment</h3><span>8</span></div>
+            <p>Vin vivant choisi avec soin, demandez-nous conseil</p>
+          </article>
+        </div>
+        <p class="menu-footnote">Une carte courte qui change au fil des saisons. Prix en euros · Les allergènes sont disponibles auprès de notre équipe.</p>
+      </section>
+
+      <section class="spirit-section" id="esprit">
+        <div class="spirit-art" aria-hidden="true"><span>✳</span><span>🍋</span><span>✳</span><b>LE PLAISIR<br>DE PARTAGER</b></div>
+        <div class="spirit-copy">
+          <p class="eyebrow eyebrow-light"><span></span> UN PEU PLUS QU'UN RESTAURANT</p>
+          <h2>On vient pour<br>manger. On reste<br><em>pour l'ambiance.</em></h2>
+          <p>Des assiettes à partager, des bouteilles qu'on aime et le temps de profiter. L'Un des Sens, c'est une maison de quartier où chaque repas est une bonne occasion.</p>
+          <a class="text-link text-link-light" href="#visite">La maison vous attend <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="visit-section section-wrap" id="visite">
+        <div class="visit-copy">
+          <p class="eyebrow"><span></span> PASSEZ NOUS VOIR</p>
+          <h2>À très <em>bientôt.</em></h2>
+          <p>Une table vous attend, que ce soit pour un déjeuner qui s'étire ou un verre qui s'improvise.</p>
+          <a class="button button-dark" href="#reservation">Réserver une table <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="visit-details">
+          <div class="detail-block"><span class="detail-icon" aria-hidden="true">⌖</span><div><h3>Nous trouver</h3><p>Venez nous rendre visite<br>Adresse du restaurant à ajouter</p></div></div>
+          <div class="detail-block"><span class="detail-icon" aria-hidden="true">◷</span><div><h3>Nos horaires</h3><p>Du mardi au samedi<br>12h — 14h · 19h — 22h</p></div></div>
+          <div class="detail-block"><span class="detail-icon" aria-hidden="true">✉</span><div><h3>Nous contacter</h3><p>Un renseignement ?<br>Contactez notre équipe</p></div></div>
+        </div>
+      </section>
+
+      <section class="reservation-section" id="reservation">
+        <div class="reservation-copy">
+          <p class="eyebrow eyebrow-light"><span></span> VOTRE PROCHAINE BONNE SOIRÉE</p>
+          <h2>On vous<br>garde une <em>place ?</em></h2>
+          <p>Indiquez-nous vos envies, on s'occupe du reste.</p>
+        </div>
+        <form class="reservation-form">
+          <label>Votre nom<input name="name" autocomplete="name" required placeholder="Camille Martin"></label>
+          <div class="form-row">
+            <label>La date<input name="date" type="date" required></label>
+            <label>À quelle heure ?<select name="time" required><option value="">Choisir</option><option>12:00</option><option>12:30</option><option>13:00</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option></select></label>
+          </div>
+          <div class="form-row">
+            <label>Nombre de personnes<select name="guests" required><option value="">Choisir</option><option>1 personne</option><option>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes</option><option>6 personnes</option></select></label>
+            <label>Votre e-mail<input name="email" type="email" autocomplete="email" required placeholder="vous@exemple.fr"></label>
+          </div>
+          <button class="button button-light" type="submit">Demander une réservation <span aria-hidden="true">↗</span></button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+          <p class="form-note">Cette demande est affichée dans cette démonstration uniquement ; elle n'est pas transmise au restaurant.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="#accueil"><span class="brand-mark" aria-hidden="true">U<span>.</span></span><span class="brand-name">L'Un des Sens<small>RESTAURANT · BAR À VINS</small></span></a>
+      <p>Les bonnes choses se partagent.</p>
+      <a class="back-top" href="#accueil">Retour en haut ↑</a>
+      <span class="copyright">© 2026 L'Un des Sens</span>
+    </footer>
+  </body>
+</html>
